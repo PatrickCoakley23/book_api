@@ -20,20 +20,21 @@ def apiOverview(request):
         'Update Book': '/book-update/<str:pk>/',
         'Delete Book': '/book-delete/<str:pk>/'
     }
-
-
+    
     return Response(api_urls)
 
 @api_view(['GET'])
 def bookList(request):
     books = Book.objects.all()
     serializer = BookSerializer(books, many=True)
+    
     return Response(serializer.data)
 
 @api_view(['GET'])
 def bookSelected(request, pk):
     book = Book.objects.get(id=pk)
     serializer = BookSerializer(book, many=False)
+    
     return Response(serializer.data)
 
 @api_view(['POST'])
