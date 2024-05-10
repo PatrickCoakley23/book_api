@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('BOOK_API_SECRET_KEY', '=opw$3kn7gxx7d1p0^if&=zlm@bn
 DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'http://bookapi-dev.eu-west-1.elasticbeanstalk.com/']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'bookapi-dev.eu-west-1.elasticbeanstalk.com']
 
 # Application definition
 
