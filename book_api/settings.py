@@ -146,7 +146,7 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age=94608000',
     }
 
-    AWS_STORAGE_BUCKET_NAME = 'bookd-django-api'
+    AWS_STORAGE_BUCKET_NAME = 'book-backend-django'
     AWS_S3_REGION_NAME = 'eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
